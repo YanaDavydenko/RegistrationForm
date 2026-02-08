@@ -1,0 +1,114 @@
+body{
+    background-color: #EBE8FB;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.container{
+   
+    background-color: white;
+    max-width: 900px;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   
+}
+
+.form_label{
+    display: block;
+    font-size: 12px;
+    color: #666666;
+        margin-bottom: 3px;
+        font-weight: bold;
+
+}
+input::placeholder{
+        font-size: 16px;
+
+}
+.form_input
+{
+     outline: none;
+ width: 564px;
+ height:56px;
+    border: 2px solid #EBE8FB;
+    padding: 4px 7px;
+    border-radius: 10px;
+     
+}
+input:focus{
+    
+    border-color: #7B61FF;
+}
+.raw{
+    margin-bottom: 32px;
+}
+form{
+    align-self: center;
+}
+h1, h2{
+    color:#7B61FF;
+    font-weight: bold;
+    text-align:center;
+}
+.span{
+    display:block;
+    font-weight: lighter;
+    font-size: 12px;
+}
+.form_label_check{
+    font-size: 16px;
+    width: 15px;
+    height:15px;
+   color: #666666;
+   
+
+}
+legend{
+     font-size: 14px;
+      color: #666666;
+      font-weight: bold;
+      padding-bottom: 12px;
+}
+fieldset{
+    border: none;
+    padding: 0;
+    margin:0;
+
+}
+.language{
+     font-size: 16px;
+     font-weight: normal;
+     color: #666666;
+}
+.language{
+    display: inline-block;
+}
+.form_select{
+
+     width: 564px;
+ height:56px;
+    border: 2px solid #7B61FF;
+    padding: 4px 7px;
+    border-radius: 10px;
+
+   color: #666666;
+      font-size: 16px;
+     font-weight: normal;
+     
+}
+.btn{
+    display:flex;
+    justify-content: space-between;
+}
+.button{
+    width:172px;
+    height: 56px;
+     border: 2px solid #7B61FF;
+      border-radius: 10px;
+      background-color: white;
+      color: #7B61FF;
+}
+    .button:active{
+        background-color: #7B61FF;
+        color: white;
+    }
