@@ -22,10 +22,11 @@
       <section class="section">
         <div class="container">
           <h2>Registration for course</h2>
-          <form>
+          <form action="./secondForm.html" method="get">
             <div class="raw">
               <label for="name" class="form_label">Username</label>
               <input
+                required
                 type="text"
                 id="name"
                 class="form_input"
@@ -36,6 +37,7 @@
             <div class="raw">
               <label for="password" class="form_label">Password</label>
               <input
+                required
                 type="password"
                 class="form_input"
                 id="password"
@@ -51,6 +53,7 @@
                 >Confirm your password</label
               >
               <input
+                required
                 type="password"
                 class="form_input"
                 placeholder="Enter password"
@@ -73,6 +76,7 @@
                 <div class="language">
                   <label for="ukr">
                     <input
+                      checked
                       type="radio"
                       name="language"
                       value="ukr"
@@ -97,15 +101,21 @@
               <fieldset>
                 <legend>Select prefferable form of study:</legend>
                 <select name="select" class="form_select">
-                  <option value="Online" selected>Online</option>
-                  <option value="Offline">Offline</option>
-                  <option value="Self-study">Self-study</option>
+                  <option class="form_select_opt" value="Online" selected>
+                    Online
+                  </option>
+                  <option class="form_select_opt" value="Offline">
+                    Offline
+                  </option>
+                  <option class="form_select_opt" value="Self-study">
+                    Self-study
+                  </option>
                 </select>
               </fieldset>
             </div>
             <div class="raw btn">
               <input type="button" value="Back" class="button" />
-              <input type="button" value="Submit" class="button" />
+              <input type="submit" value="Submit" class="button subm" />
             </div>
           </form>
         </div>

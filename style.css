@@ -1,3 +1,5 @@
+@import url('./_normalize.css');
+
 body{
     background-color: #EBE8FB;
     font-family: "Noto Sans", sans-serif;
@@ -25,6 +27,7 @@ input::placeholder{
         font-size: 16px;
 
 }
+
 .form_input
 {
      outline: none;
@@ -79,8 +82,6 @@ fieldset{
      font-size: 16px;
      font-weight: normal;
      color: #666666;
-}
-.language{
     display: inline-block;
 }
 .form_select{
@@ -96,6 +97,7 @@ fieldset{
      font-weight: normal;
      
 }
+
 .btn{
     display:flex;
     justify-content: space-between;
@@ -111,4 +113,16 @@ fieldset{
     .button:active{
         background-color: #7B61FF;
         color: white;
+    }
+    .subm{
+        background-color: #7B61FF;
+        color: white;
+    }
+    .subm:active{
+        background-color: white;
+        color: #7B61FF;
+    }
+    .radio{
+        display: flex;
+        flex-direction: column;;
     }

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./secondFornStyle.css" />
+    <title>Document</title>
+    </head>
+    <header></header>
+    <main>
+      <form class="form">
+        <section class="column">
+          <fieldset class="block">
+            <legend>Personal information</legend>
+            <label class="form_label"
+              >First name<input type="text" class="form_input" placeholder="Name"
+            /></label>
+            <label class="form_label"
+              >Last name<input type="text" class="form_input" placeholder="Surname"
+            /></label>
+            <label class="form_label"
+              >Birthday:<input type="date" class="form_input"
+            /></label>
+          </fieldset>
+
+          <fieldset class="block">
+            <legend>Preferences:</legend>
+            <label class="form_label" for="study_form">Form of study:</label>
+            <select class="form_select" name="study_form" id="study_form">
+              <option value="Online">Online</option>
+              <option value="Offline">Offline</option>
+              <option value="Self-study">Self-study</option>
+            </select>
+            <label class="form_label" for="hours">Hours per week:</label>
+            <select class="form_select" name="hours" id="hours">
+              <option value="2">2</option>
+              <option value="4">4</option>
+              <option value="6">6</option>
+            </select>
+            <label class="form_label" for="lang">Select language:</label>
+            <select class="form_select" name="lang" id="lang">
+              <option value="English">English</option>
+              <option value="Ukrainian">Ukrainian</option>
+              <option value="German">German</option>
+            </select>
+          </fieldset>
+        </section>
+        <section class="column">
+          <fieldset class="block">
+            <legend>Course and skills</legend>
+            <label class="form_label_check"
+              ><input type="checkbox" name="skills" value="html"/>HTML</label
+            >
+
+            <label class="form_label_check"
+              ><input type="checkbox" name="skills" value="css" />CSS</label
+            ><label class="form_label_check"
+              ><input
+                type="checkbox"
+                name="skills"
+                value="javaScript"
+              /> JavaScript</label
+            ><label class="form_label_check"
+              ><input type="checkbox" name="skills" value="git" />Git</label
+            >
+          </fieldset>
+
+          <fieldset class="block">
+            <legend>Your employment type:</legend>
+            <input class="radio"
+              type="radio"
+              id="full"
+              name="emp_type"
+              value="full"
+              checked
+            />
+           
+            <label for="full">Full-time</label>
+            <input class="radio" type="radio" id="part" name="emp_type" value="part" />
+            <label for="part">Part-time</label>
+            <input class="radio" type="radio" id="unemp" name="emp_type" value="unemp" />
+            <label for="unemp">Unemployed</label>
+            <input class="radio" type="radio" id="student" name="emp_type" value="student" />
+            <label for="student">Student</label>
+          </fieldset>
+
+          <div class="block">
+            <input type="button" value="Back" />
+            <input type="submit" value="Submit" />
+          </div>
+        </section>
+      </form>
+    </main>
+  </head>
+  <body></body>
+</html>
